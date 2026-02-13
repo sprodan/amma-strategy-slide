@@ -167,12 +167,25 @@
     }
     .member {
       border: 1px solid rgba(255,255,255,0.14);
-      background: rgba(255,255,255,0.04);
+      background: linear-gradient(135deg, rgba(255,255,255,0.07), rgba(255,255,255,0.03));
       border-radius: 12px;
       padding: 12px;
       display: flex;
       align-items: center;
       gap: 10px;
+      position: relative;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(8px) scale(.985);
+      animation: cardIn .6s ease-out forwards;
+    }
+    .member::after {
+      content: "";
+      position: absolute;
+      inset: -1px;
+      border-radius: 12px;
+      pointer-events: none;
+      box-shadow: 0 0 0 1px rgba(255,255,255,.08);
     }
     .avatar {
       width: 52px;
@@ -192,6 +205,20 @@
     .m-name { font-size: 15px; font-weight: 600; }
     .m-role { font-size: 13px; color: var(--muted); margin-top: 2px; }
 
+    .dep-ceo { box-shadow: 0 0 0 1px rgba(34,211,238,.35), 0 0 28px rgba(34,211,238,.18); }
+    .dep-cpo { box-shadow: 0 0 0 1px rgba(244,114,182,.35), 0 0 28px rgba(244,114,182,.16); }
+    .dep-cto { box-shadow: 0 0 0 1px rgba(52,211,153,.35), 0 0 28px rgba(52,211,153,.16); }
+    .dep-coo { box-shadow: 0 0 0 1px rgba(251,113,133,.35), 0 0 28px rgba(251,113,133,.16); }
+    .dep-cmo { box-shadow: 0 0 0 1px rgba(96,165,250,.35), 0 0 28px rgba(96,165,250,.16); }
+    .dep-cfo { box-shadow: 0 0 0 1px rgba(167,139,250,.35), 0 0 28px rgba(167,139,250,.16); }
+
+    .team-grid .member:nth-child(1){ animation-delay:.06s }
+    .team-grid .member:nth-child(2){ animation-delay:.12s }
+    .team-grid .member:nth-child(3){ animation-delay:.18s }
+    .team-grid .member:nth-child(4){ animation-delay:.24s }
+    .team-grid .member:nth-child(5){ animation-delay:.30s }
+    .team-grid .member:nth-child(6){ animation-delay:.36s }
+
     .footer {
       display: flex;
       justify-content: space-between;
@@ -207,6 +234,10 @@
     @keyframes grow { from { width: 0; } to { width: var(--w, 60%); } }
     @keyframes draw { to { stroke-dashoffset: 0; } }
     @keyframes fadein { from { opacity: 0; } to { opacity: .45; } }
+    @keyframes cardIn {
+      from { opacity: 0; transform: translateY(10px) scale(.985); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
 
     @media (max-width: 980px) {
       body { padding: 12px; display: block; }
@@ -356,12 +387,12 @@
     <section class="team">
       <h3>C-level team</h3>
       <div class="team-grid">
-        <div class="member"><img class="avatar" src="assets/avatars/ceo.svg" alt="CEO avatar"/><div><div class="m-name">Stas Prodan</div><div class="m-role">CEO</div></div></div>
-        <div class="member"><img class="avatar" src="assets/avatars/cpo.svg" alt="CPO avatar"/><div><div class="m-name">Anna M.</div><div class="m-role">CPO</div></div></div>
-        <div class="member"><img class="avatar" src="assets/avatars/cto.svg" alt="CTO avatar"/><div><div class="m-name">Boris Z.</div><div class="m-role">CTO</div></div></div>
-        <div class="member"><img class="avatar" src="assets/avatars/coo.svg" alt="COO avatar"/><div><div class="m-name">E. Zhiharev</div><div class="m-role">COO</div></div></div>
-        <div class="member"><img class="avatar" src="assets/avatars/cmo.svg" alt="CMO avatar"/><div><div class="m-name">K. Zamyatina</div><div class="m-role">CMO</div></div></div>
-        <div class="member"><img class="avatar" src="assets/avatars/cfo.svg" alt="CFO avatar"/><div><div class="m-name">Katrina F.</div><div class="m-role">CFO</div></div></div>
+        <div class="member dep-ceo"><img class="avatar" src="assets/avatars/ceo.svg" alt="CEO avatar"/><div><div class="m-name">Stas Prodan</div><div class="m-role">CEO</div></div></div>
+        <div class="member dep-cpo"><img class="avatar" src="assets/avatars/cpo.svg" alt="CPO avatar"/><div><div class="m-name">Anna M.</div><div class="m-role">CPO</div></div></div>
+        <div class="member dep-cto"><img class="avatar" src="assets/avatars/cto.svg" alt="CTO avatar"/><div><div class="m-name">Boris Z.</div><div class="m-role">CTO</div></div></div>
+        <div class="member dep-coo"><img class="avatar" src="assets/avatars/coo.svg" alt="COO avatar"/><div><div class="m-name">E. Zhiharev</div><div class="m-role">COO</div></div></div>
+        <div class="member dep-cmo"><img class="avatar" src="assets/avatars/cmo.svg" alt="CMO avatar"/><div><div class="m-name">K. Zamyatina</div><div class="m-role">CMO</div></div></div>
+        <div class="member dep-cfo"><img class="avatar" src="assets/avatars/cfo.svg" alt="CFO avatar"/><div><div class="m-name">Katrina F.</div><div class="m-role">CFO</div></div></div>
       </div>
       <div class="small">AI-сгенерированные аватарки. Можем заменить на реальные фото в один апдейт.</div>
     </section>
