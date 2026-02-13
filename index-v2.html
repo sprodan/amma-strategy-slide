@@ -178,13 +178,10 @@
       width: 52px;
       height: 52px;
       border-radius: 50%;
-      display: grid;
-      place-items: center;
-      font-weight: 700;
-      color: #fff;
-      font-size: 16px;
+      object-fit: cover;
+      display: block;
       flex-shrink: 0;
-      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.2);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.2), 0 4px 12px rgba(0,0,0,.25);
     }
     .g1 { background: linear-gradient(135deg,#22d3ee,#6366f1); }
     .g2 { background: linear-gradient(135deg,#f472b6,#a78bfa); }
@@ -359,14 +356,14 @@
     <section class="team">
       <h3>C-level team</h3>
       <div class="team-grid">
-        <div class="member"><div class="avatar g1">SP</div><div><div class="m-name">Stas Prodan</div><div class="m-role">CEO</div></div></div>
-        <div class="member"><div class="avatar g2">AM</div><div><div class="m-name">Anna M.</div><div class="m-role">CPO</div></div></div>
-        <div class="member"><div class="avatar g3">BZ</div><div><div class="m-name">Boris Z.</div><div class="m-role">CTO</div></div></div>
-        <div class="member"><div class="avatar g4">EZ</div><div><div class="m-name">E. Zhiharev</div><div class="m-role">COO</div></div></div>
-        <div class="member"><div class="avatar g5">KZ</div><div><div class="m-name">K. Zamyatina</div><div class="m-role">CMO</div></div></div>
-        <div class="member"><div class="avatar g6">KF</div><div><div class="m-name">Katrina F.</div><div class="m-role">CFO</div></div></div>
+        <div class="member"><img class="avatar" src="assets/avatars/ceo.svg" alt="CEO avatar"/><div><div class="m-name">Stas Prodan</div><div class="m-role">CEO</div></div></div>
+        <div class="member"><img class="avatar" src="assets/avatars/cpo.svg" alt="CPO avatar"/><div><div class="m-name">Anna M.</div><div class="m-role">CPO</div></div></div>
+        <div class="member"><img class="avatar" src="assets/avatars/cto.svg" alt="CTO avatar"/><div><div class="m-name">Boris Z.</div><div class="m-role">CTO</div></div></div>
+        <div class="member"><img class="avatar" src="assets/avatars/coo.svg" alt="COO avatar"/><div><div class="m-name">E. Zhiharev</div><div class="m-role">COO</div></div></div>
+        <div class="member"><img class="avatar" src="assets/avatars/cmo.svg" alt="CMO avatar"/><div><div class="m-name">K. Zamyatina</div><div class="m-role">CMO</div></div></div>
+        <div class="member"><img class="avatar" src="assets/avatars/cfo.svg" alt="CFO avatar"/><div><div class="m-name">Katrina F.</div><div class="m-role">CFO</div></div></div>
       </div>
-      <div class="small">Временные AI-аватары-заглушки. Можем заменить на реальные фото в один апдейт.</div>
+      <div class="small">AI-сгенерированные аватарки. Можем заменить на реальные фото в один апдейт.</div>
     </section>
 
     <footer class="footer">
