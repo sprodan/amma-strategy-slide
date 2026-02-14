@@ -52,7 +52,7 @@
       box-shadow: 0 16px 40px rgba(0,0,0,.35);
     }
     .img{
-      height:190px;
+      height:340px;
       position:relative;
       background: linear-gradient(135deg, rgba(255,255,255,.08), rgba(255,255,255,.02));
       overflow:hidden;
@@ -64,19 +64,18 @@
       display:block;
     }
     .stamp{
-      position:absolute;
-      left:14px;
-      bottom:14px;
       display:inline-flex;
       gap:8px;
       align-items:center;
       padding:8px 10px;
       border-radius:999px;
       border:1px solid rgba(255,255,255,.18);
-      background: rgba(0,0,0,.22);
-      backdrop-filter: blur(6px);
+      background: rgba(0,0,0,.28);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
       font-size:12px;
       color:#e2e8f0;
+      margin-bottom:10px;
     }
     .dot{width:8px;height:8px;border-radius:50%;background:linear-gradient(90deg,var(--a1),var(--a2))}
     .content{padding:14px}
@@ -97,8 +96,10 @@
 
   <section class="grid">
     <article class="card">
-      <div class="img"><img class="hero" src="assets/memes/png/01.png" alt="Мем-картинка 1"/><div class="stamp"><span class="dot"></span> Утро • токсикоз</div></div>
+      <div class="img"><img class="hero" src="assets/memes/png/01.png" alt="Мем-картинка 1"/></div>
       <div class="content">
+        <div class="stamp"><span class="dot"></span> Утро • токсикоз</div>
+
         <div class="top">До беременности:</div>
         <div class="bottom">«Сейчас встану и покорю мир»</div>
         <div class="top" style="margin-top:10px">Во время:</div>
@@ -107,72 +108,90 @@
     </article>
 
     <article class="card">
-      <div class="img"><img class="hero" src="assets/memes/png/02.png" alt="Мем-картинка 2"/><div class="stamp"><span class="dot"></span> Еда • cravings</div></div>
+      <div class="img"><img class="hero" src="assets/memes/png/02.png" alt="Мем-картинка 2"/></div>
       <div class="content">
+        <div class="stamp"><span class="dot"></span> Еда • cravings</div>
+
         <div class="top">Когда кто-то говорит: «Просто не жри на ночь»</div>
         <div class="bottom">Ага. Сейчас объясню ребёнку, что ему, блять, нельзя огурцы с вареньем в 02:17.</div>
       </div>
     </article>
 
     <article class="card">
-      <div class="img"><img class="hero" src="assets/memes/png/03.png" alt="Мем-картинка 3"/><div class="stamp"><span class="dot"></span> Сон</div></div>
+      <div class="img"><img class="hero" src="assets/memes/png/03.png" alt="Мем-картинка 3"/></div>
       <div class="content">
+        <div class="stamp"><span class="dot"></span> Сон</div>
+
         <div class="top">Беременность — это когда</div>
         <div class="bottom">ты хочешь спать 24/7, но спать можешь только на левом боку, в позе «креветка под ипотекой».</div>
       </div>
     </article>
 
     <article class="card">
-      <div class="img"><img class="hero" src="assets/memes/png/04.png" alt="Мем-картинка 4"/><div class="stamp"><span class="dot"></span> Социалка</div></div>
+      <div class="img"><img class="hero" src="assets/memes/png/04.png" alt="Мем-картинка 4"/></div>
       <div class="content">
+        <div class="stamp"><span class="dot"></span> Социалка</div>
+
         <div class="top">«Ой, ты светишься!»</div>
         <div class="bottom">Это не свечение. Это пот. И лёгкая паника. И да, мне жарко, блять.</div>
       </div>
     </article>
 
     <article class="card">
-      <div class="img"><img class="hero" src="assets/memes/png/05.png" alt="Мем-картинка 5"/><div class="stamp"><span class="dot"></span> Пузожитель</div></div>
+      <div class="img"><img class="hero" src="assets/memes/png/05.png" alt="Мем-картинка 5"/></div>
       <div class="content">
+        <div class="stamp"><span class="dot"></span> Пузожитель</div>
+
         <div class="top">Когда малыш пинается в 3 ночи</div>
         <div class="bottom">Он там, видимо, боксирует с моим мочевым пузырём. Спасибо, чемпион.</div>
       </div>
     </article>
 
     <article class="card">
-      <div class="img"><img class="hero" src="assets/memes/png/06.png" alt="Мем-картинка 6"/><div class="stamp"><span class="dot"></span> «Советчики»</div></div>
+      <div class="img"><img class="hero" src="assets/memes/png/06.png" alt="Мем-картинка 6"/></div>
       <div class="content">
+        <div class="stamp"><span class="dot"></span> «Советчики»</div>
+
         <div class="top">Любимый спорт окружающих</div>
         <div class="bottom">давать беременной советы, которые никто не просил. Уровень: «Дыши и всё пройдёт». Ну да, охуенно.</div>
       </div>
     </article>
 
     <article class="card">
-      <div class="img"><img class="hero" src="assets/memes/png/07.png" alt="Мем-картинка 7"/><div class="stamp"><span class="dot"></span> Эмоции</div></div>
+      <div class="img"><img class="hero" src="assets/memes/png/07.png" alt="Мем-картинка 7"/></div>
       <div class="content">
+        <div class="stamp"><span class="dot"></span> Эмоции</div>
+
         <div class="top">Плакать из‑за рекламы йогурта</div>
         <div class="bottom">— это когда гормоны такие: «держи, сестра, вот тебе драма на ровном месте».</div>
       </div>
     </article>
 
     <article class="card">
-      <div class="img"><img class="hero" src="assets/memes/png/08.png" alt="Мем-картинка 8"/><div class="stamp"><span class="dot"></span> Тело</div></div>
+      <div class="img"><img class="hero" src="assets/memes/png/08.png" alt="Мем-картинка 8"/></div>
       <div class="content">
+        <div class="stamp"><span class="dot"></span> Тело</div>
+
         <div class="top">Пытаться надеть обувь на позднем сроке</div>
         <div class="bottom">— это квест «наклонись и не умри». Разработчики — ад, но саундтрек хороший.</div>
       </div>
     </article>
 
     <article class="card">
-      <div class="img"><img class="hero" src="assets/memes/png/09.png" alt="Мем-картинка 9"/><div class="stamp"><span class="dot"></span> Поддержка</div></div>
+      <div class="img"><img class="hero" src="assets/memes/png/09.png" alt="Мем-картинка 9"/></div>
       <div class="content">
+        <div class="stamp"><span class="dot"></span> Поддержка</div>
+
         <div class="top">Идеальная помощь партнёра:</div>
         <div class="bottom">не советы. а вода, еда и фраза «да, ты права». Всё. Больше ничего, блять, не надо.</div>
       </div>
     </article>
 
     <article class="card">
-      <div class="img"><img class="hero" src="assets/memes/png/10.png" alt="Мем-картинка 10"/><div class="stamp"><span class="dot"></span> Финал</div></div>
+      <div class="img"><img class="hero" src="assets/memes/png/10.png" alt="Мем-картинка 10"/></div>
       <div class="content">
+        <div class="stamp"><span class="dot"></span> Финал</div>
+
         <div class="top">«Ну что, когда рожать?»</div>
         <div class="bottom">Когда я захочу. И когда малыш захочет. А пока — отъебитесь, пожалуйста.</div>
         <div class="hint">*Если хочешь мягче — заменю мат на «блин/капец», но жиза останется.</div>
